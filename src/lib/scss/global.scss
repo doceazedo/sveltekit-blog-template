@@ -1,0 +1,10 @@
+@import './vars';
+
+body {
+	background-color: $grey;
+}
+
+body,
+button {
+	font-family: 'Poppins', sans-serif;
+}
