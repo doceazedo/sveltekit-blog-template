@@ -27,7 +27,6 @@
 
 		&.secondary {
 			color: $blue;
-			background-color: $grey;
 		}
 	}
 </style>

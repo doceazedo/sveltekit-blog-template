@@ -17,17 +17,14 @@
 </header>
 
 <style lang="scss">
-	@import '../scss/vars';
-
 	.hero {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 1.5rem;
-		text-align: center;
 		width: 100%;
-		max-width: $max-width;
-		margin: 0 auto;
+		padding: 4rem 0;
+		text-align: center;
 	}
 
 	.title {

@@ -23,6 +23,7 @@
 <style lang="scss">
 	.memoji {
 		height: 10rem;
+		margin-top: -0.75rem;
 		margin-bottom: -2.5rem;
 	}
 </style>
