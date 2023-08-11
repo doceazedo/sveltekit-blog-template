@@ -27,65 +27,53 @@
 	</div>
 </section>
 
-<style lang="scss">
-	@import '../scss/vars';
-
+<style>
 	.section {
 		width: 70ch;
 		margin: 0 auto;
 	}
-
 	.thumbnail {
 		width: 100%;
-		aspect-ratio: 16 / 9;
+		aspect-ratio: 1.7777777778;
 		background-position: center;
 		background-repeat: no-repea;
 		background-size: cover;
 		border-radius: 1rem;
 		margin-bottom: 4rem;
 	}
-
 	.header {
 		padding: 4rem 0;
 	}
-
 	hgroup {
 		margin-top: 1.5rem;
 	}
-
 	.pretitle {
 		font-size: 0.75rem;
 		text-transform: uppercase;
 		font-weight: 600;
-		color: $dark-grey;
+		color: #6e6e73;
 	}
-
 	.title {
 		font-size: 3rem;
 		font-weight: 600;
-		color: $black;
+		color: #1d1d1f;
 	}
-
 	.subtitle {
 		font-size: 1.5rem;
 		font-weight: 400;
-		color: $black;
+		color: #1d1d1f;
 	}
-
 	.date {
 		font-size: 12px;
-		color: $dark-grey;
+		color: #6e6e73;
 	}
-
 	@media screen and (max-width: 768px) {
 		.title {
 			font-size: 2.5rem;
 		}
-
 		.thumbnail {
 			border-radius: 0;
 		}
-
 		.section {
 			width: 100%;
 			padding: 0 1.5rem;
