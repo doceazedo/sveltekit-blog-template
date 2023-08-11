@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ArrowRight } from 'lucide-svelte';
+	import { EMAIL } from '$lib/helpers/socials';
 	import Button from './Button.svelte';
 	import Memoji from './Memoji.svelte';
 </script>
@@ -12,7 +13,7 @@
 	</hgroup>
 	<div class="buttons">
 		<Button primary href="https://behance.net/paulacruz" target="_blank">Últimos jobs</Button>
-		<Button secondary href="mailto:me@doceazedo.com">Fale comigo <ArrowRight size={16} /></Button>
+		<Button secondary href="mailto:{EMAIL}">Fale comigo <ArrowRight size={16} /></Button>
 	</div>
 </header>
 
