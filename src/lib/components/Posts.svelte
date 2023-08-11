@@ -32,6 +32,7 @@
 	}
 
 	.post {
+		width: calc(100% / 3 - 1rem);
 		background-color: #fff;
 		border-radius: 1rem;
 		overflow: hidden;
@@ -109,14 +110,5 @@
 	.post:nth-child(4),
 	.post:nth-child(5) {
 		width: calc(50% - 1.5rem / 2);
-	}
-
-	.post:nth-child(6),
-	.post:nth-child(7),
-	.post:nth-child(8),
-	.post:nth-child(9),
-	.post:nth-child(10),
-	.post:nth-child(11) {
-		width: calc(100% / 3 - 1rem);
 	}
 </style>
