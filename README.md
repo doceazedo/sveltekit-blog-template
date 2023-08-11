@@ -2,7 +2,9 @@
 
 Static blog template powered by SvelteKit and Markdown
 
-![](screenshot.png)
+<p align="center">
+  <img src="./screenshot.gif" />
+</p>
 
 ## 📝 How to use
 
