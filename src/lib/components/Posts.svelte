@@ -1,17 +1,21 @@
+<script lang="ts">
+	import { formatDate } from '$lib/utils/format-date';
+	import type { Post } from '../../routes/+page.server';
+
+	export let posts: Post[] = [];
+</script>
+
 <section class="posts">
-	{#each Array(11) as uwu, i}
+	{#each posts as post}
 		<article class="post">
-			<a href="/post">
-				<figure
-					class="thumbnail"
-					style={`background-image:url(https://picsum.photos/1280/720?i=${i})`}
-				/>
+			<a href="/blog/{post.slug}">
+				<figure class="thumbnail" style={`background-image:url(${post.thumbnail})`} />
 				<div class="content">
 					<hgroup>
-						<p class="pretitle">PRETITLE</p>
-						<p class="title">Usando Memojis para abrilhantar seus designs</p>
+						<p class="pretitle">{post.category}</p>
+						<p class="title">{post.title}</p>
 					</hgroup>
-					<p class="date">9 de Agosto, 2023</p>
+					<p class="date">{formatDate(post.date)}</p>
 				</div>
 			</a>
 		</article>

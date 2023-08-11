@@ -1,28 +1,48 @@
 <script>
+	import { formatDate } from '$lib/utils/format-date';
+
 	export let title = '';
+	export let subtitle = '';
+	export let category = '';
+	export let thumbnail = '';
+	export let date = '';
 </script>
 
-<article class="post">
+<section class="section">
 	<header class="header">
-		<p class="pretitle">PRESS RELEASE</p>
-		<p class="date">10 de Agosto, 2023</p>
+		<p class="pretitle">{category}</p>
+		<p class="date">{formatDate(date)}</p>
 		<hgroup>
 			<h1 class="title">{title}</h1>
-			<p class="subtitle">Services revenue reaches new all-time high</p>
+			<p class="subtitle">{subtitle}</p>
 		</hgroup>
 	</header>
-	<hr />
+</section>
+
+<figure class="thumbnail" style={`background-image:url(${thumbnail})`} />
+
+<section class="section">
 	<div class="content">
 		<slot />
 	</div>
-</article>
+</section>
 
 <style lang="scss">
 	@import '../scss/vars';
 
-	.post {
+	.section {
 		width: 70ch;
 		margin: 0 auto;
+	}
+
+	.thumbnail {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		background-position: center;
+		background-repeat: no-repea;
+		background-size: cover;
+		border-radius: 1rem;
+		margin-bottom: 4rem;
 	}
 
 	.header {
@@ -55,10 +75,5 @@
 	.date {
 		font-size: 12px;
 		color: $dark-grey;
-	}
-
-	hr {
-		border-top: 1px solid rgba($dark-grey, 0.1);
-		margin-bottom: 4rem;
 	}
 </style>
