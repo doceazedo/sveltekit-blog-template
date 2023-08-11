@@ -11,8 +11,8 @@
 		<p class="subtitle">UI/UX Designer & Developer</p>
 	</hgroup>
 	<div class="buttons">
-		<Button primary href="#jobs">Últimos jobs</Button>
-		<Button secondary href="#contact">Fale comigo <ArrowRight size={16} /></Button>
+		<Button primary href="https://behance.net/paulacruz" target="_blank">Últimos jobs</Button>
+		<Button secondary href="mailto:me@doceazedo.com">Fale comigo <ArrowRight size={16} /></Button>
 	</div>
 </header>
 

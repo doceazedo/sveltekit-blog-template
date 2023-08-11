@@ -1,11 +1,12 @@
 <script lang="ts">
 	export let href = '';
+	export let target: string | null = null;
 
 	export let primary = false;
 	export let secondary = false;
 </script>
 
-<a {href} class="button" class:primary class:secondary>
+<a {href} {target} class="button" class:primary class:secondary>
 	<slot />
 </a>
 
