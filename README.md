@@ -1,38 +1,22 @@
-# create-svelte
+# SvelteKit Blog Template 💖
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Static blog template powered by SvelteKit and Markdown
 
-## Creating a project
+![](screenshot.png)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 📝 How to use
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+If you want to use this project as a template for your website
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+1. Fork this repository
+2. Add your info on the [helper files](./src/lib/helpers)
+3. Edit the [homepage hero](./src/lib/components/Hero.svelte) and everything else you want
+4. Add your blog posts to the [blog](./src/routes/blog) directory
 
-## Developing
+> 💡 You can also record your own Memoji, save the video and replace the [memoji.mov](./static/memoji.mov) file.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 🚀 How to deploy
 
-```bash
-npm run dev
+The easieast way to deploy is to use [**Vercel**](https://vercel.com). There you can deploy it with no need to setup anything.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+You can also deploy it as an static website, as it uses the `@sveltejs/adapter-static`, but the deployment process may differ according to your hosting service of choice.
