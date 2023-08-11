@@ -58,6 +58,7 @@
 		align-items: center;
 		width: 100%;
 		max-width: $max-width;
+		padding: 0 1.5rem;
 	}
 
 	.email {

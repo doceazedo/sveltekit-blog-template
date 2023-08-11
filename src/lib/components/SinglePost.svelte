@@ -76,4 +76,19 @@
 		font-size: 12px;
 		color: $dark-grey;
 	}
+
+	@media screen and (max-width: 768px) {
+		.title {
+			font-size: 2.5rem;
+		}
+
+		.thumbnail {
+			border-radius: 0;
+		}
+
+		.section {
+			width: 100%;
+			padding: 0 1.5rem;
+		}
+	}
 </style>

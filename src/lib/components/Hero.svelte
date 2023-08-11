@@ -24,7 +24,7 @@
 		align-items: center;
 		gap: 1.5rem;
 		width: 100%;
-		padding: 4rem 0;
+		padding: 4rem 1.5rem;
 		text-align: center;
 	}
 
@@ -41,5 +41,11 @@
 	.buttons {
 		display: flex;
 		gap: 0.75rem;
+	}
+
+	@media screen and (max-width: 768px) {
+		.title {
+			font-size: 2.5rem;
+		}
 	}
 </style>

@@ -44,4 +44,10 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 768px) {
+		.footer {
+			padding: 2rem 1.5rem;
+		}
+	}
 </style>
